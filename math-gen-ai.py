@@ -5,7 +5,7 @@ import streamlit as st
 from dotenv import load_dotenv, find_dotenv
 import pandas as pd
 import PyPDF2
-from docx import Document
+from docx2txt import Document
 from io import StringIO
 import math  # Include the math library
 import langchain
