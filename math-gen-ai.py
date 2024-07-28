@@ -8,12 +8,14 @@ import PyPDF2
 from docx import Document
 from io import StringIO
 import math  # Include the math library
-from langchain.document_loaders import TextLoader
+import langchain
+import langchain_openai
+from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.embeddings.openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from sqlalchemy import create_engine
 from werkzeug.utils import secure_filename
 
