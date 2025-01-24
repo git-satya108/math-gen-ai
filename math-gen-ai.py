@@ -83,7 +83,7 @@ def chat_with_assistant(prompt, system_message):
                 {"role": "user", "content": prompt},
             ],
         )
-        return response.choices[0].message['content']
+        return response.choices[0].message.content
     except Exception as e:
         st.error(f"Error: {e}")
         return None
